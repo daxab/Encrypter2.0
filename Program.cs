@@ -10,7 +10,7 @@ using System.IO;
 
 
 
-class MainForm : Form
+class Program : Form
 {
 	OpenFileDialog open_file;
 	SaveFileDialog save_file;
@@ -178,7 +178,7 @@ class MainClaas
 		var handle = GetConsoleWindow();
 		ShowWindow(handle, SW_HIDE);
 		Application.EnableVisualStyles ();
-		Application.Run (new MainForm ());
+		Application.Run (new Program ());
 	}
 
 }
